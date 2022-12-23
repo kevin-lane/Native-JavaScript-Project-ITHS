@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <nav id="navbar">
+    <ul id="nav-list">
+      <li><a href="">Home</a></li>
+      <li><a href="extras.html">Extras</a></li>
+    </ul>
+  </nav>
+  <article>
+    <section id="currency-converter">
+      <div class="input-group">
+        <span class="label-holder">Convert from:</span>
+        <select class="currency-dropdown" name="Convert_From" id="convert-from"></select>
+        <input class="amount-input" id="convert-from-input" placeholder="Write amount here">
+      </div>
+      <div class="input-group">
+        <span class="label-holder">Convert to:</span>
+        <select class="currency-dropdown" name="Convert_To" id="convert-to">
+        </select>
+        <span id="convert-to-output"></span>
+      </div>
+    </section>
+    <section id="top-ten-currencies">
+      <h3>Top 10 currencies</h3>
+      <div class="input-group">
+        <span   class="label-holder">Currency:</span>
+        <select   class="currency-dropdown"   name="Currency_Selector"   id="currency-selector"></select>
+      </div>
+      </section>
+    <section>
+      <ol id="top-ten-list">
+      </ol>
+      <div class="chart-container">
+        <canvas id="top-ten-chart">
+        </canvas>
+      </div>
+    </section>
+  </article>
+  <script src="index.js"></script>
+  <script src="topTenList.js"></script>
+</body>
+</html>
